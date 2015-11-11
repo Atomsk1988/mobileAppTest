@@ -1,0 +1,18 @@
+<ion-view view-title="Compass">
+  <ion-content>
+	 <div class="orientation">
+	  {{direction}}
+	</div>
+	<div class="orientation">
+	   {{orientation}}
+	</div>
+	<div class="orientation">
+	   {{prev_orientation}}
+	</div>
+    <div id="compass">
+    	<img ng-src="img/handle.png" width="100%" height="100%" ng-style="{'transform':'rotate('+orientation+'deg)' }">
+    	<img ng-src="img/compass.jpg" width="100%" height="100%">
+    </div>
+	
+  </ion-content>
+</ion-view>
